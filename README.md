@@ -7,9 +7,9 @@ https://pushover.net *
 
 You can get a 30 day free trial to try out this script.
 
-When you create a Pushover account, create a new APP and give it a name 9This will pop up on the phone notification), then get the App token and user details and enter them into the 'keys.py' script.
+When you create a Pushover account, create a new APP and give it a name (This will pop up on the phone notification), then get the App token and user details and enter them into the 'keys.py' script.
 
-In the 'Intruder_Alert.py' script, change where it says 'name1' and 'name2' (if required) to the name of faces known faces saved on Vector, make sure to write them exactly as shown in the app.
+In the 'Intruder_Alert.py' script, change where it says 'name1' and 'name2' (if required) to the name of known faces saved on Vector, make sure to write them exactly as shown in the app.
 (Line 57, 64 and 71)
 
 BONUS:
