@@ -54,21 +54,21 @@ def test_subscriber(robot, event_type, event):
 
     for face in robot.world.visible_faces:
         print("I see a face")
-        if face.name == '[ENTER NAME1 HERE]':
+        if face.name == 'NAME1':
             print(f"Face name: {face.name}")
             robot.conn.request_control()
             robot.behavior.say_text(f"whats up : {face.name}?")
             time.sleep(2)
             robot.conn.release_control()
 
-        if face.name == '[ENTER NAME2 HERE]':
+        if face.name == 'NAME2':
             print(f"Face name: {face.name}")
             robot.conn.request_control()
             robot.behavior.say_text(f"Good Evening : {face.name}!")
             time.sleep(2)
             robot.conn.release_control()
 
-        if face.name != '[ENTER NAME1 HERE]' or face.name != '[ENTER NAME2 HERE]':
+        if face.name != 'NAME1' or face.name != 'NAME2':
             robot.conn.request_control()
             robot.behavior.set_head_angle(degrees(25.0))
             robot.behavior.set_lift_height(0.0)
